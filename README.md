@@ -27,5 +27,5 @@ Mozilla Firefox
 
 Repository:
 GitHub: https://github.com/Iwona007/virtual-marines
-DeckerHub: https://hub.docker.com/repository/docker/iwona007/virtualmarines
+DeckerHub: https://hub.docker.com/r/iwona007/virtualmarines/tags
 YT: https://bit.ly/virtual-marines
