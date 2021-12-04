@@ -3,13 +3,17 @@ version: '3.7'
 services:
   app:
     container_name: app
-    image: marine
+    image: iwona007/virtualmarines:1.0
     build:
       context: .
+      args:
+        JAR_FILE: target/*.jar
     networks:
       - marine_network
     ports:
       - "9000:9090"
+    volumes:
+      - ./logs:/var/www/logs
     depends_on:
       - db
     environment:
