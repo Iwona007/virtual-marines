@@ -17,19 +17,8 @@ public class PointDatabase {
     @Column(name="destination_Y")
     private double destinationY;
 
-//    private String dateTime;
-
     public PointDatabase() {
     }
-
-//    public Point(double y, double x, String name, double destinationX, double destinationY, String dateTime) {
-//        this.y = y;
-//        this.x = x;
-//        this.name = name;
-//        this.destinationX = destinationX;
-//        this.destinationY = destinationY;
-//        this.dateTime = dateTime;
-//    }
 
     public PointDatabase(double y, double x, String name, double destinationX, double destinationY) {
         this.y = y;
@@ -86,11 +75,4 @@ public class PointDatabase {
         Id = id;
     }
 
-//    public String getDateTime() {
-//        return dateTime;
-//    }
-//
-//    public void setDateTime(String dateTime) {
-//        this.dateTime = dateTime;
-//    }
 }

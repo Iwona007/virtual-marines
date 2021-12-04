@@ -5,9 +5,11 @@ import org.springframework.stereotype.Service;
 import pl.iwona.virtualmarines.model.PointDatabase;
 import pl.iwona.virtualmarines.repository.PointRepository;
 
+import java.util.List;
 
-;import java.util.List;
-
+/**
+ * Service
+ */
 @Service
 public class TrackReadingService {
 
@@ -19,11 +21,11 @@ public class TrackReadingService {
         this.trackService = trackService;
     }
 
-    public void savePoint(List<PointDatabase> pointDatabase) {
+    public void savePoint() {
         pointRepository.saveAll(trackService.getTracks());
     }
 
     public List<PointDatabase> getPoints() {
-      return  trackService.getTracks();
+        return trackService.getTracks();
     }
 }
